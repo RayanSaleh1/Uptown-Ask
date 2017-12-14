@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Raleway|Signika|Signika+Negative" rel="stylesheet">
+    <title>Ask Uptown</title>
+    <style media="screen">
+
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body{
+      font-family: 'Abel', sans-serif;
+      background-color: #E6ECF0;
+    }
+
+    .h12{
+      text-align: center;
+    }
+
+    .hero{
+      position: relative;
+      width: 1200px;
+      margin-left: 500px;
+      margin-top: 0;
+      top: 190px;
+    }
+
+     .banner{
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      position: relative;
+      top: 170px;
+      left: 125px;
+    }
+
+    .buttons{
+      margin-top: 15px;
+      margin-left: 490px;
+    }
+
+    .btn{
+      border: 1px solid white;
+      padding: 10px 30px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .buttons a:hover{
+      background-color: #cdc9c9;
+      transition: all 0.5s ease-in;
+    }
+
+    .about{
+      width: 100%;
+      height: 300px;
+      color: #F4F7F8;
+    }
+    .about h1{
+      color: black;
+      margin-top: 60px;
+      margin-left: 2px;
+      font-family: 'Signika Negative', sans-serif;
+      font-weight: 500;
+      font-size: 35px;
+    }
+
+    .paragraph-about{
+      color:black;
+      font-family: 'Signika Negative', sans-serif;
+      margin-left: 70px;
+      margin-right: 60px;
+      margin-top: 30px;
+    }
+
+    .section{
+      width: 100%;
+      height: 350px;
+      background-color: #F4F7F8;
+    }
+
+
+    .card-pic{
+      background-color: #fff;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      display: inline-block;
+      margin-top: 30px;
+      margin-right: 30px;
+      margin-left: 40px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+
+    .card-pic h4 {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 20px;
+    }
+
+    .card-pic p{
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 12px;
+    }
+
+
+    .card-pic-two{
+      background-color: #fff;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      display: inline-block;
+      margin-left: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+    .card-pic-two h4{
+      text-align: center;
+      font-size: 25px;
+      margin-top: 20px;
+    }
+
+    .card-pic-two p{
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 12px;
+    }
+
+    .card-pic-three{
+      background-color: #fff;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      display: inline-block;
+      margin-left: 150px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+    .card-pic-three h4{
+      text-align: center;
+      font-size: 25px;
+      margin-top: 20px;
+    }
+
+    .card-pic-three p{
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 12px;
+    }
+
+    .main-nav22 {
+      float: right;
+      list-style: none;
+      margin-top: 45px;
+    }
+
+    .main-nav22 li {
+      display: inline-block;
+    }
+
+    .main-nav22 li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 20px;
+      font-family: 'Signika', sans-serif;
+      font-size: 19px;
+      margin-right: 10px;
+    }
+
+    .main-nav22 li:hover a {
+      border: 1px solid white;
+    }
+
+    .main-nav22 li a:active {
+      border: 1px solid white;
+    }
+
+
+    .footer-distributed{
+      background-color: #292c2f;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+
+      padding: 55px 50px;
+      margin-top: 80px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    /* Footer left */
+
+    .footer-distributed .footer-left{
+      width: 40%;
+    }
+
+    /* The company logo */
+
+    .footer-distributed h3{
+      color:  #ffffff;
+      font: normal 36px 'Cookie', cursive;
+      margin: 0;
+    }
+
+    .footer-distributed h3 span{
+      color:  #5383d3;
+    }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links{
+      color:  #ffffff;
+      margin: 20px 0 12px;
+      padding: 0;
+    }
+
+    .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color:  inherit;
+    }
+
+    .footer-distributed .footer-company-name{
+      color:  #8f9296;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    /* Footer Center */
+
+    .footer-distributed .footer-center{
+      width: 35%;
+    }
+
+    .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+
+    .footer-distributed .footer-center i.fa-envelope{
+      font-size: 17px;
+      line-height: 38px;
+    }
+
+    .footer-distributed .footer-center p{
+      display: inline-block;
+      color: #ffffff;
+      vertical-align: middle;
+      margin:0;
+    }
+
+    .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+    }
+
+    .footer-distributed .footer-center p a{
+      color:  #5383d3;
+      text-decoration: none;;
+    }
+
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right{
+      width: 20%;
+    }
+
+    .footer-distributed .footer-company-about{
+      line-height: 20px;
+      color:  #92999f;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-distributed .footer-icons{
+      margin-top: 25px;
+    }
+
+    .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color:  #33383b;
+      border-radius: 2px;
+
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+
+    .footer-distributed{
+      position: relative;
+      top: 200px;
+    }
+
+    /* If you don't want the footer to be responsive, remove these media queries */
+
+    @media (max-width: 880px) {
+
+      .footer-distributed{
+        font: bold 14px sans-serif;
+      }
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .footer-distributed .footer-center i{
+        margin-left: 0;
+      }
+
+
+    }
+
+    .twitter{
+      width: 42px;
+      height: 42px;
+    }
+
+
+    .facebook{
+      width: 42px;
+      height: 42px;
+    }
+
+    .instagram {
+      width: 40px;
+      height: 40px;
+    }
+
+    .icons{
+      margin-top: 20px;
+    }
+
+
+    .adress{
+      width: 30px;
+      height: 30px;
+      margin-right: 40px;
+    }
+
+    .email{
+      width: 40px;
+      height: 40px;
+    }
+
+    .phone{
+      width: 20px;
+      height: 20px;
+    }
+
+    .adress-sec{
+      margin-bottom: 25px;
+    }
+
+    .phone-sec{
+      margin-bottom: 20px;
+    }
+
+    .logo-text{
+        color:  #ffffff;
+        font: normal 36px 'Cookie', cursive;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 27px;
+        float: left;
+        text-decoration: none;
+        font-size: 27px;
+    }
+
+    .logo-text span{
+      color: #5383d3;
+    }
+
+
+    .backgr{
+      background-color: #7F7F7F;
+      height: 13vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+
+    header{
+      background: src(.backgr);
+    }
+
+.group_name2{
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  top: 30px;
+  border: 1px solid white;
+  padding-bottom: 10px
+}
+
+.join_but{
+  position: relative;
+  top: 30px;
+  left: 30px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #A69580;
+  background-color: #A69580;
+  padding: 10px 50px 10px 50px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.leave_but{
+  position: relative;
+  top: 30px;
+  left: 820px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ED2F34;
+  background-color: #ED2F34;
+  padding: 10px 50px 10px 50px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.name-span{
+  position: relative;
+  top: 5px;
+}
+
+.lev-span{
+  font-size: 20px;
+}
+
+.join-span{
+  font-size: 20px;
+}
+
+.mem-span{
+  position: relative;
+  bottom: 17px;
+  left: 20px;
+}
+
+.no-que{
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 55px;
+}
+
+.ques-ques{
+  text-align: center;
+}
+
+.buttonforask{
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(45deg, #B388EB, #8093F1);
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  left: 1100px;
+  text-decoration: none;
+}
+    </style>
+  </head>
+  <body>
+
+<header>
+
+<div class="backgr">
+    <nav class="" role="navigation" id="navbar">
+          <div class="">
+            <div class="logo">
+              <a class="logo-text" href="{% url 'home' %}"><h3>Uptown<span>Ask</h3></span></a>
+          </div>
+
+
+              <ul class="main-nav22">
+                {% if user.is_authenticated %}
+                      <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                      <li><a href="{% url 'posts:create' %}">Stuck? Ask A question</a></li>
+                      <li><a href="{% url 'groups:all' %}">Groups</a></li>
+                      <li><a href="{% url 'accounts:logout' %}">Log out</a></li>
+                {% else %}
+                      <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                      <li><a href="{% url 'groups:all' %}">Groups</a></li>
+                      <li><a href="{% url 'accounts:login' %}" >Log in</a></li>
+                      <li><a href="{% url 'accounts:signup' %}" >Sign up</a></li>
+                {% endif %}
+              </ul>
+
+          </header>
+
+          <section>
+
+            <h1 class="group_name2"> <span class="name-span">{{group.name}}</span></h1>
+            <h2><span class="mem-span"> Member Count: {{group.members.count}}</span></h2>
+
+              <div class="content">
+
+
+            				{% if user in group.members.all %}
+            					<a href="{% url 'groups:leave' slug=group.slug %}" class="leave_but"><span class="glyphicon glyphicon-remove-circle"></span> <span class="lev-span">Leave</span></a>
+            				{% else %}
+            					<a href="{% url 'groups:join' slug=group.slug %}" class="join_but" ><span class="join-span">Join</span> </a>
+            				{% endif %}
+
+
+
+            </div>
+
+
+
+
+
+
+            <div class="">
+              <a href="{% url 'posts:create' %}" class="buttonforask">Ask A Question</a>
+              <h1 class="ques-ques">Questions</h1>
+            	{% if group.posts.count == 0 %}
+            	<h2 class="no-que">No Questions in this group yet!</h2>
+
+            	{% else %}
+
+            		{% for post in group.posts.all %}
+            			{% include "posts/_post.html" %}
+            		{% endfor %}
+
+            	{% endif %}
+            </div>
+
+          </section>
+
+
+    <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+    <h3>Uptown<span>Ask</span></h3>
+
+    <p class="footer-links">
+    <a href="#">Home</a>
+    ·
+    <a href="#">Blog</a>
+    ·
+    <a href="#">About</a>
+    ·
+    <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Ask Uptown &copy; 2017</p>
+    </div>
+
+    <div class="footer-center">
+
+    <div class="adress-sec">
+    <p class="p-adress">Address: Tripoli Street, Algeria Road, Mirdif Area - Dubai, United Arab Emirtes</p>
+    </div>
+
+    <div class="phone-sec">
+    <p>Phone: 04 251 5001</p>
+    </div>
+
+    <div class="email-sec">
+    <p class="p-email"><a href="mailto:rayanza3eem1234@gmail.com">Email: Uptownschool@gmail.com</a></p>
+    </div>
+
+    </div>
+
+    <div class="footer-right">
+
+    <p class="footer-company-about">
+    <span>About the company</span>
+    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="icons">
+
+    <a href="https://www.twitter.com" target="_blank"><img src="{% static "images/twitter.png" %}" alt="Twitter" class="twitter" ></a>
+    <a href="https://www.facebook.com" target="_blank"><img src="{% static "images/facebook.png" %}" alt="Facebook" class="facebook" ></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="{% static "images/insta.png" %}" class="instagram" ></a>
+
+    </div>
+
+    </div>
+
+    </footer>
+  </body>
+</html>
